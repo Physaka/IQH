@@ -3,16 +3,14 @@
 \usepackage{braket}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{tikz}
-\title{Laughlin}
+\usepackage{comment}
+\title{Laughlinの議論}
 \author{松本大輝}
 \date{}
 
 \begin{document}
 \maketitle
-%\section{Laughlinの議論}
-%一定磁場下の二次元電子系ではランダウ準位という等間隔に離散化されたエネルギー準位が
-%形成され、この準位間にフェルミエネルギーがあると系は絶縁体となる。このようなときに
-%ホール伝導度が
+
 Laughlinはゲージ不変性を用いてホール伝導度が量子化されることを説明した．このノートはそのLaughlinの議論
 を個人的にまとめたものである．
 図のようなシリンダー状の二次元電子系を考える．シリンダーの周長を$L_y$，高さを$L_x$とする．系の表面を一様な磁場$B_0$が垂直に貫いているとする．
@@ -33,6 +31,7 @@ Laughlinはゲージ不変性を用いてホール伝導度が量子化される
     \draw (8.6,-0.1) node[right]{$I_y$};
 \end{tikzpicture}
 \end{center}
+\begin{comment}
 この磁束により生じるベクトルポテンシャルの周方向の成分は磁束$\Phi$と
 \begin{equation}
     \Phi = \int A_y dy = A_y L_y,
@@ -82,7 +81,7 @@ $\omega = eB_0/mc$は振動数,$x_0 = c\hbar k_y /eB_0$は振動中心である�
     E_n = \hbar \omega \left(n + \frac{1}{2} \right),
 \end{equation}
 と離散的に量子化されたランダウ準位となる．
-
+\end{comment}
 磁束が入った後もゲージ不変性によりハミルトニアン自体は不変であり，エネルギー分散も変化しない．しかし，元の系の波動関数を$e^{ik_y y}\phi_n$とすれば，
 磁束を入れることにより波動関数は$e^{ik_y y} \phi_n \to e^{i(k_y + eA_y /\hbar c)y} \phi_n $ と変化するため，磁束が入ると振動中心が
 $\displaystyle x_0 \to x_0 + \frac{A_y}{B_0} $だけズレる．すなわち，系の電子が$x$方向に移動する．
