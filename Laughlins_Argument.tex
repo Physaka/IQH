@@ -15,6 +15,11 @@ Laughlinはゲージ不変性を用いてホール伝導度が量子化される
 を個人的にまとめたものである．
 図のようなシリンダー状の二次元電子系を考える．シリンダーの周長を$L_y$，高さを$L_x$とする．系の表面を一様な磁場$B_0$が垂直に貫いているとする．
 この系では周方向に流れるホール電流$I_y$はシリンダーを通る表面に接しない磁束$\Phi$を断熱的\footnote{Aharonov-Borm位相がBerry位相であることから"adiabatic derivative"か？}に入れたことにより生じたと考えることができる．
+このシリンダーを通る磁束の変化分を$\Delta \Phi$，それに伴うエネルギーの変化を$\Delta U$とすると，光速度を$c$としてホール電流$I_y$は
+\begin{equation}
+    I_y = c \frac{\Delta U}{\Delta \Phi}
+\end{equation}
+である．
 \begin{center}
 \begin{tikzpicture}
     \draw (5,0) circle[x radius=0.5,y radius=1];
@@ -81,12 +86,16 @@ $\omega = eB_0/mc$は振動数,$x_0 = c\hbar k_y /eB_0$は振動中心である�
     E_n = \hbar \omega \left(n + \frac{1}{2} \right),
 \end{equation}
 と離散的に量子化されたランダウ準位となる．
-\end{comment}
+
+
 磁束が入った後もゲージ不変性によりハミルトニアン自体は不変であり，エネルギー分散も変化しない．しかし，元の系の波動関数を$e^{ik_y y}\phi_n$とすれば，
 磁束を入れることにより波動関数は$e^{ik_y y} \phi_n \to e^{i(k_y + eA_y /\hbar c)y} \phi_n $ と変化するため，磁束が入ると振動中心が
 $\displaystyle x_0 \to x_0 + \frac{A_y}{B_0} $だけズレる．すなわち，系の電子が$x$方向に移動する．
+\end{comment}
+磁束を入れることにより系の波動関数はAharonov-Bohm効果による位相$\displaystyle \exp{ \left(\frac{ie \Delta \Phi y}{c\hbar L_y} \right)}$だけ変化する．
 系の左端から右端の電位差が$V$であり，磁束を入れる前後で$n$個の電子が端から端まで移動したとする．そうすると系の全エネルギーの変化$\Delta U$は$\Delta U = neV$
-となる．$\displaystyle \frac{dU}{d\Phi} \to \frac{\Delta U}{ \Delta \Phi}$という置き換え\footnote{磁束の変化が磁束量子分であることから，微分を差分に置き換える近似が正当化されているか．}によりホール電流は
+となる．
+% $\displaystyle \frac{dU}{d\Phi} \to \frac{\Delta U}{ \Delta \Phi}$という置き換え\footnote{磁束の変化が磁束量子分であることから，微分を差分に置き換える近似が正当化されているか．}によりホール電流は
 \begin{equation}
     I_y = c\frac{\Delta U}{\Delta \Phi} = c\frac{neV}{hc/e} = n \frac{e^2}{h} V
 \end{equation}
