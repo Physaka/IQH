@@ -93,8 +93,15 @@ $\omega = eB_0/mc$は振動数,$x_0 = c\hbar k_y /eB_0$は振動中心である�
 $\displaystyle x_0 \to x_0 + \frac{A_y}{B_0} $だけズレる．すなわち，系の電子が$x$方向に移動する．
 \end{comment}
 磁束を入れることにより系の波動関数はAharonov-Bohm効果による位相$\displaystyle \exp{ \left(\frac{ie \Delta \Phi y}{c\hbar L_y} \right)}$だけ変化する．
-系の左端から右端の電位差が$V$であり，磁束を入れる前後で$n$個の電子が端から端まで移動したとする．そうすると系の全エネルギーの変化$\Delta U$は$\Delta U = neV$
-となる．
+y方向に広がった状態の存在を仮定すると波動関数の一価性から，このようなゲージ変換は
+\begin{equation}
+    \Delta \Phi = n \frac{hc}{e}
+\end{equation}
+のときしか許されない．逆に言えば，磁束の変化が磁束量子の整数倍であれば，ゲージ不変性により磁束を入れる前後で系の状態は変わらない．
+今，$\Delta \Phi = hc/e$とする．このときゲージ不変性から系は元の状態に戻るだけなので，磁束量子を入れる操作によってはシリンダーの端から端まで
+$n$個の電子の移動のみ考えられる．
+系の左端から右端の電位差が$V$であったとする．そうすると系の全エネルギーの変化$\Delta U$は$\Delta U = neV$
+となり，したがってホール電流$I_y$は(1)式から
 % $\displaystyle \frac{dU}{d\Phi} \to \frac{\Delta U}{ \Delta \Phi}$という置き換え\footnote{磁束の変化が磁束量子分であることから，微分を差分に置き換える近似が正当化されているか．}によりホール電流は
 \begin{equation}
     I_y = c\frac{\Delta U}{\Delta \Phi} = c\frac{neV}{hc/e} = n \frac{e^2}{h} V
